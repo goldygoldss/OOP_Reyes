@@ -13,11 +13,6 @@ public class StudentsInformation {
 
         while (true) {
             System.out.print(" Menu \n 1. Add Student \n 2. Edit Student \n 3. View Student \n 4. Exit \n Select Choices: ");
-            System.out.println("1. Add Student");
-            System.out.println("2. Edit Student");
-            System.out.println("3. View Student");
-            System.out.println("4. Exit");
-            System.out.print("Select Choices: ");
             int choice = scanner.nextInt();
 
             if (choice == 1) {
