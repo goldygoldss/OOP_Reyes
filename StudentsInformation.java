@@ -2,8 +2,8 @@ package studentsinformation;
 import java.util.Scanner;
 public class StudentsInformation {
     
-    private static final int MAX_STUDENTS = 10;
-    private Student[] studentList = new Student[MAX_STUDENTS];
+    private static final int Students = 10;
+    private Student[] studentList = new Student[Students];
     private int studentCount = 0;
     
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class StudentsInformation {
         StudentsInformation s = new StudentsInformation();
 
         while (true) {
-            System.out.println("\nMenu");
+            System.out.print(" Menu \n 1. Add Student \n 2. Edit Student \n 3. View Student \n 4. Exit \n Select Choices: ");
             System.out.println("1. Add Student");
             System.out.println("2. Edit Student");
             System.out.println("3. View Student");
@@ -35,7 +35,7 @@ public class StudentsInformation {
     }
 
     private void addStudent(Scanner scanner) {
-        if (studentCount < MAX_STUDENTS) {
+        if (studentCount < Students) {
             System.out.print("Enter student name: ");
             String name = scanner.next();
             System.out.print("Enter student course: ");
